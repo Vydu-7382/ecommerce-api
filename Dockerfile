@@ -19,6 +19,5 @@ FROM eclipse-temurin:17-jre
 WORKDIR /ecommerce-api
 
 COPY --from=build /ecommerce-api/target/*.jar ecommerce-api.jar
-ls -l target
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "ecommerce-api.jar"]
