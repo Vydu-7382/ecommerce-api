@@ -10,7 +10,7 @@ import java.util.List;
 public class ItemService {
 
     private final List<Item> items = new ArrayList<>();
-    private long idCounter = 1;
+    private long idCounter = 100;
 
     public Item addItem(Item item) {
         item.setId(idCounter++);

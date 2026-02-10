@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/items")
-@CrossOrigin(origins = "http://localhost:5173/") // Allow frontend calls
+@CrossOrigin(origins = "https://ecommerce-frontend-phi-five.vercel.app/") // Allow frontend calls
 public class ItemController {
 
     private final ItemService service;
