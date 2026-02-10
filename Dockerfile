@@ -18,7 +18,7 @@ RUN ./mvnw clean package -DskipTests
 FROM eclipse-temurin:17-jre
 WORKDIR /ecommerce-api
 
-COPY --from=build /app/target/*.jar app.jar
-
+COPY --from=build /ecommerce-api/target/*.jar ecommerce-api.jar
+ls -l target
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "ecommerce-api.jar"]
